@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-ancestors 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src 'self' data:; connect-src 'none'; form-action 'self'">
+<meta name="description" content="Sinan Yağız - Elektrik Elektronik Mühendisi | Elektrik Bakım ve Otomasyon Yöneticisi">
+<title>Sinan Yağız | Electrical Engineering & Automation</title>
+<style>
+:root{--bg:#08111f;--panel:#0e1b2e;--text:#eef5ff;--muted:#9db0c8;--accent:#38bdf8;--accent2:#22c55e;--line:#20324b}
+*{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;background:linear-gradient(180deg,#06101d,#0a1422 45%,#07101b);color:var(--text);font-family:Inter,Segoe UI,Arial,sans-serif;line-height:1.6}
+body{-webkit-user-select:none;user-select:none;-webkit-touch-callout:none} img{-webkit-user-drag:none;user-drag:none}
+a{color:inherit;text-decoration:none}.container{width:min(1120px,92%);margin:auto}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;background:rgba(6,16,29,.82);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.07)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:800;letter-spacing:.5px}.logo span{color:var(--accent)}
+.navlinks{display:flex;gap:24px;font-size:14px;color:var(--muted)}.navlinks a:hover{color:white}
+.hero{min-height:92vh;display:grid;place-items:center;padding-top:72px;position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;width:520px;height:520px;background:radial-gradient(circle,rgba(56,189,248,.18),transparent 65%);right:-120px;top:80px}
+.hero-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:55px;align-items:center}
+.badge{display:inline-flex;border:1px solid #24425c;border-radius:999px;padding:7px 13px;color:#b8d7eb;background:#0b1c2c;font-size:13px}
+h1{font-size:clamp(42px,6vw,78px);line-height:1.02;margin:20px 0 18px;letter-spacing:-3px}h1 span{color:var(--accent)}
+.lead{font-size:19px;color:var(--muted);max-width:720px}.buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.btn{padding:12px 18px;border-radius:10px;border:1px solid var(--line);font-weight:700}.primary{background:var(--accent);color:#04101a;border-color:var(--accent)}.secondary{background:#0d1a2a}
+.profile{border:1px solid var(--line);background:linear-gradient(145deg,#102238,#0b1626);padding:28px;border-radius:22px;box-shadow:0 20px 70px rgba(0,0,0,.25)}
+.profile .initial{height:110px;width:110px;border-radius:50%;display:grid;place-items:center;font-size:38px;font-weight:900;background:linear-gradient(135deg,#38bdf8,#2563eb);color:white;margin-bottom:22px}
+.profile h3{margin:0 0 7px;font-size:23px}.profile p{margin:0;color:var(--muted)}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:25px}.stat{padding:14px;background:#091523;border:1px solid var(--line);border-radius:12px}.stat b{display:block;font-size:21px}.stat small{color:var(--muted)}
+section{padding:95px 0;border-top:1px solid rgba(255,255,255,.05)}.eyebrow{color:var(--accent);font-size:13px;text-transform:uppercase;letter-spacing:2px;font-weight:800}h2{font-size:38px;line-height:1.15;margin:9px 0 34px}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:40px}.about p{color:var(--muted)}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:23px}.card h3{margin:0 0 8px}.card p{color:var(--muted);font-size:14px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}.tag{padding:7px 10px;border-radius:8px;background:#12243a;border:1px solid #23415f;color:#c9e9fa;font-size:13px}
+.timeline{border-left:2px solid #23415f;padding-left:25px}.job{position:relative;margin-bottom:35px}.job:before{content:"";position:absolute;left:-34px;top:7px;width:13px;height:13px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px #0a1a2b}.job h3{margin:0}.job .date{color:var(--accent);font-size:13px;font-weight:700}.job p{color:var(--muted);margin-top:7px}
+.project{display:flex;flex-direction:column;justify-content:space-between;min-height:210px}.project .number{font-size:13px;color:var(--accent);font-weight:800}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:25px}.contact-box{background:var(--panel);border:1px solid var(--line);padding:25px;border-radius:16px}.contact-box p{color:var(--muted)}
+footer{padding:35px 0;color:#71859e;border-top:1px solid rgba(255,255,255,.06);font-size:13px}
+@media(max-width:800px){.navlinks{display:none}.hero-grid,.about,.contact{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.hero{padding-top:110px}.profile{max-width:520px}h1{letter-spacing:-2px}}
+</style>
+</head>
+<body>
+<nav><div class="container nav">
+<a class="logo" href="#home">SİNAN<span>YAĞIZ</span></a>
+<div class="navlinks"><a href="#about">Hakkımda</a><a href="#experience">Deneyim</a><a href="#skills">Uzmanlık</a><a href="#projects">Projeler</a><a href="#contact">İletişim</a></div>
+</div></nav>
+
+<main id="home">
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="badge">Electrical Engineering • Automation • Maintenance Management</div>
+<h1>Elektrik &<br><span>Otomasyon</span> Mühendisi</h1>
+<p class="lead">Endüstriyel tesislerde elektrik bakım, otomasyon, üretim sürekliliği, enerji verimliliği ve teknik ekip yönetimi üzerine deneyimli Elektrik-Elektronik Mühendisi.</p>
+<div class="buttons"><a class="btn primary" href="#experience">Kariyerimi İncele</a><a class="btn secondary" href="#contact">İletişime Geç</a></div>
+</div>
+<div class="profile">
+<div class="initial">SY</div><h3>Sinan Yağız</h3><p>Electrical Maintenance & Automation Manager</p>
+<div class="stats"><div class="stat"><b>10+</b><small>Yıl deneyim</small></div><div class="stat"><b>PLC</b><small>Otomasyon</small></div><div class="stat"><b>HV/LV</b><small>Elektrik sistemleri</small></div></div>
+</div>
+</div>
+</section>
+
+<section id="about"><div class="container">
+<div class="eyebrow">Profil</div><h2>Teknik bilgi + operasyonel yönetim</h2>
+<div class="about">
+<div><p>Endüstriyel üretim tesislerinde elektrik bakım ve otomasyon operasyonlarını yönetiyor; arıza önleme, planlı bakım, yedek parça yönetimi, enerji verimliliği ve üretim sürekliliğine odaklanıyorum.</p><p>PLC/HMI/SCADA, sürücüler, robotik sistemler, endüstriyel haberleşme, EPLAN/AutoCAD ve SAP bakım süreçlerinde saha tecrübesine sahibim.</p></div>
+<div class="cards"><div class="card"><h3>Bakım</h3><p>Planlı bakım, kestirimci bakım, arıza analizi ve MTBF/MTTR odaklı iyileştirme.</p></div><div class="card"><h3>Otomasyon</h3><p>PLC, HMI, SCADA, servo/sürücü ve endüstriyel haberleşme sistemleri.</p></div></div>
+</div></div></section>
+
+<section id="experience"><div class="container">
+<div class="eyebrow">Kariyer</div><h2>Profesyonel deneyim</h2>
+<div class="timeline">
+<div class="job"><div class="date">11/2021 — Günümüz</div><h3>Electrical Maintenance & Automation Manager — Modern Oluklu Mukavva Ambalaj / Eren Holding</h3><p>Elektrik bakım ve otomasyon ekibinin yönetimi; üretim hatları, PLC/HMI/SCADA, robotik sistemler, enerji yönetimi, SAP yedek parça süreçleri ve bakım organizasyonu.</p></div>
+<div class="job"><div class="date">04/2019 — 11/2021</div><h3>Electrical Maintenance Engineer — Hürriyet / Demirören</h3><p>Yüksek gerilim, UPS, AC/DC/servo sürücüler ve endüstriyel haberleşme altyapılarında bakım ve arıza yönetimi.</p></div>
+<div class="job"><div class="date">01/2018 — 04/2019</div><h3>Electrical / Automation Engineer — Aroma İlaç</h3><p>Üretim tesislerinde elektrik ve otomasyon sistemlerinin bakım ve devreye alma çalışmaları.</p></div>
+<div class="job"><div class="date">2015 — 2018</div><h3>Electrical / Automation Roles — Huawei & LogiControls</h3><p>Endüstriyel ve teknik sistemlerde saha, devreye alma ve bakım deneyimi.</p></div>
+</div></div></section>
+
+<section id="skills"><div class="container">
+<div class="eyebrow">Yetkinlikler</div><h2>Teknik uzmanlık alanları</h2>
+<div class="tags">
+<span class="tag">Siemens S7 / TIA Portal</span><span class="tag">PLC / HMI</span><span class="tag">SCADA</span><span class="tag">EPLAN</span><span class="tag">AutoCAD</span><span class="tag">AC/DC Drives</span><span class="tag">Servo Systems</span><span class="tag">Profibus</span><span class="tag">Modbus</span><span class="tag">CAN</span><span class="tag">Sercos</span><span class="tag">SAP PM</span><span class="tag">Robotik</span><span class="tag">HV/LV</span><span class="tag">Enerji Verimliliği</span><span class="tag">Bakım Yönetimi</span><span class="tag">Ekip Yönetimi</span>
+</div></div></section>
+
+<section id="projects"><div class="container">
+<div class="eyebrow">Öne Çıkan Çalışmalar</div><h2>Proje ve operasyon deneyimi</h2>
+<div class="cards">
+<div class="card project"><div><div class="number">01</div><h3>Üretim Hattı Otomasyonu</h3><p>BHS Corrugated, BOBST ve yardımcı üretim ekipmanlarında elektrik/otomasyon bakım ve süreklilik yönetimi.</p></div><div class="tags"><span class="tag">PLC</span><span class="tag">SCADA</span></div></div>
+<div class="card project"><div><div class="number">02</div><h3>Robotik & Konveyör Sistemleri</h3><p>MINDA konveyör, palet robotları ve Düecker robotik uygulamalarında bakım ve arıza yönetimi.</p></div><div class="tags"><span class="tag">Robot</span><span class="tag">Motion</span></div></div>
+<div class="card project"><div><div class="number">03</div><h3>Enerji & Bakım Optimizasyonu</h3><p>Enerji tüketimi, bakım planlaması, kritik yedek parçalar ve arıza kök neden analizleriyle operasyonel iyileştirme.</p></div><div class="tags"><span class="tag">RCA</span><span class="tag">MTBF/MTTR</span></div></div>
+</div></div></section>
+
+<section id="contact"><div class="container">
+<div class="eyebrow">İletişim</div><h2>Profesyonel bağlantı</h2>
+<div class="contact">
+<div class="contact-box"><h3>İş fırsatları & teknik projeler</h3><p>Elektrik bakım yönetimi, otomasyon, teknik servis yönetimi ve endüstriyel projeler için iletişime geçebilirsiniz.</p><div class="buttons"><a class="btn primary" href="mailto:EMAILINIZI@BURAYA.COM">E-posta Gönder</a><a class="btn secondary" href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div>
+
+</div></div></section>
+</main>
+<footer><div class="container">© 2026 Sinan Yağız • Electrical Engineering & Automation</div></footer>
+<script>
+(() => {
+  const blockedKeys = new Set(["c", "x", "v", "u", "s", "a", "p"]);
+
+  document.addEventListener("contextmenu", event => event.preventDefault());
+  document.addEventListener("selectstart", event => event.preventDefault());
+  document.addEventListener("dragstart", event => event.preventDefault());
+  document.addEventListener("copy", event => event.preventDefault());
+  document.addEventListener("cut", event => event.preventDefault());
+
+  document.addEventListener("keydown", event => {
+    const key = event.key.toLowerCase();
+    if ((blockedKeys.has(key) && (event.ctrlKey || event.metaKey)) ||
+        event.key === "F12" ||
+        (event.ctrlKey && event.shiftKey && ["i", "j", "c"].includes(key))) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  });
+})();
+</script>
+</body>
+</html>
